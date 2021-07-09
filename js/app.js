@@ -6,6 +6,19 @@ $(document).ready(function () {
     dotsClass: "dots",
   });
 
+  new Typed("#typed", {
+    strings: [
+      "Full Stack Developer",
+      "UI/UX Designer",
+      " Android App Developer",
+    ],
+    typeSpeed: 100,
+    delaySpeed: 1000,
+    backSpeed: 30,
+    backDelay: 500,
+    loop: true,
+  });
+
   let hamburger = document.querySelector(".hamburger");
   let times = document.querySelector(".times");
   let mobileNav = document.querySelector(".mobile-nav");
