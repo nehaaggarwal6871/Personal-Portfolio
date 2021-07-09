@@ -361,6 +361,8 @@ section.skills .card-wrapper .card .overlay{
     align-items: center;
     color: var(--pure);
     opacity: 0;
+    font-weight: 600;
+    font-size: 1.5rem;
     transition: all 0.3s ease;
 }
 
@@ -390,7 +392,6 @@ section.contact .card-wrapper .card img{
 section.contact .card-wrapper .card h1{
     font-family: 'Poppins',sans-serif;
     color: var(--secondary);
-    font-weight: 400;
     margin-bottom: 1rem;
 }
 
@@ -634,6 +635,6 @@ section.contact .btn-wrapper{
         margin-right: 1.4rem;
     }
     section.reviews .slider .slide{
-        padding: 0 2rem;
+        padding: 1rem 2rem;
     }
 }

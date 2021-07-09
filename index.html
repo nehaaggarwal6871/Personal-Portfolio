@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/style.css" />
+
+    
   </head>
 
 
@@ -79,10 +81,7 @@
                   </p>
                   
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
-                    blanditiis et dolorum. Laboriosam eaque assumenda doloremque
-                    quidem similique consequuntur laudantium id. Amet architecto
-                    doloremque explicabo cupiditate cum ipsum quod modi?
+                    Being a fresher, seeking for an opportunity to be inspired, to envision the unlikely, to work hard for things that are worth it, and to be surrounded by those who bring out the best in me.
                   </p>
                   <p>
                       <a href="Neha's-resume.pdf">
@@ -104,7 +103,16 @@
                   <div class=" flex-1 right">
                       <h1>About <span>Me</span></h1>
                       <h3>Hi, I'm Neha Aggarwal</h3>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur distinctio officiis tenetur libero officia perferendis dolores perspiciatis odio mollitia sunt iusto, explicabo dicta nisi accusantium quisquam accusamus fugiat! Magnam amet, consequuntur laboriosam velit nobis ducimus voluptatibus libero repudiandae? Aliquid possimus, natus veritatis accusantium rem recusandae? Fuga, illum nulla? Earum voluptatibus iste tempore porro odio quia!</p>
+                      <p>I'm currently pursuing Masters of Computer Application (MCA) from
+                        Institute of Management and Entrepreneurship Development,Pune. I
+                        had graduated in Bachelor of Computer Application from Insitite of
+                        Technology and Science. <br />
+                        So far, in a year I have begun to work as a Full Stack
+                        Developer. Earlier I work as a Front End Developer for 1 years.<br/> I had completed some projects in teams and recieve the
+                        wonderful feedback. I like to implement my knowledge to accomplish
+                        the project's goal. <br />I also enjoy taking complex problems and
+                        turn them into simpler one. I also like to apply the logic and
+                        structure the code and strive to write elegant and effcient code.</p>
       
                       <div class="social">
                           <a href="https://www.linkedin.com/in/nehaaggarwal1999/"><img src="./images/linkedin.png" alt=""></a>
@@ -217,46 +225,46 @@
                   <div class="card-wrapper">
                       <div class="card">
                           <div class="overlay">
-                              <span>HTML</span>
+                              <span>HTML & CSS</span>
                               
                           </div>
-                          <img src="./images/ph-1.png" alt="">
+                          <img src="./images/skills1.jpeg" alt="">
                       </div>
                       <div class="card">
                           <div class="overlay">
-                              <span>HTML</span>
+                              <span>ReactJS</span>
                               
                           </div>
-                          <img src="./images/ph-1.png" alt="">
+                          <img src="./images/skills2.jpeg" alt="">
                       </div>
                       
                       <div class="card">
                           <div class="overlay">
-                              <span>HTML</span>
+                              <span>node.js</span>
                               
                           </div>
-                          <img src="./images/ph-1.png" alt="">
+                          <img src="./images/skills3.jpeg" alt="">
                       </div>
                       <div class="card">
                           <div class="overlay">
-                              <span>HTML</span>
+                              <span>ExpressJS</span>
                               
                           </div>
-                          <img src="./images/ph-1.png" alt="">
+                          <img src="./images/skills4.png" alt="">
                       </div>
                       <div class="card">
                           <div class="overlay">
-                              <span>HTML</span>
+                              <span>MongoDB</span>
                               
                           </div>
-                          <img src="./images/ph-1.png" alt="">
+                          <img src="./images/skills5.jpeg" alt="">
                       </div>
                       <div class="card">
                           <div class="overlay">
-                              <span>HTML</span>
+                              <span>Flutter</span>
                               
                           </div>
-                          <img src="./images/ph-1.png" alt="">
+                          <img src="./images/skills6.jpeg" alt="">
                       </div>
                   </div>
       
@@ -281,17 +289,17 @@
                       </div>
                       
                   </div>
-                  <form action="">
+                  <form action="javascript:sendmail()" method="post">
                       <div class="input-wrap">
-                          <input type="text" placeholder="Your Name *">
-                          <input type="email" placeholder="Your Email *" >
+                          <input id="Name" name="Name"  type="text" placeholder="Your Name *">
+                          <input id="Sender" name="Sender"  type="email" placeholder="Your Email *" >
                       </div>
                       <div class="input-wrap-2">
-                          <input type="text" placeholder="Your Subject...">
-                          <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                          <input id="Subject" name="Subject" type="text" placeholder="Your Subject...">
+                          <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
                       </div>
                       <div class="btn-wrapper">
-                          <button class="btn btn-primary">Send Message</button>
+                          <button type="submit" class="btn btn-primary">Send Message</button>
                       </div>
                   </form>
               </div>
@@ -303,10 +311,58 @@
     </div>
     <!-- <script src="js/jquery/jquery.min.js"></script>
     <script src="js/typed.js/typed.min.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script >
+        function sendmail() {
+            var name = $("#Name").val();
+            var email = $("#Sender").val();
+            var subject = $("#Subject").val();
+            var msg = $("#Message").val();
+
+            var Body1 =
+                "Name: " +
+                name +
+                "<br>Email: " +
+                email +
+                "<br>Subject: " +
+                subject +
+                "<br>Message: " +
+                msg;
+                
+    
+        }
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "officialnehaaggarwal@gmail.com",
+            Password: "neha@3101143@",
+            To: "neha68977@gmail.com",
+            From: "officialnehaaggarwal@gmail.com",
+            Subject: "New Mail on Contact Form from " + name,
+            Body: Body1,
+        }).then((message) => {
+            if(message == 'OK') {
+                alert("Your mail has been send. Thank you for connecting. ");
+            } else {
+                console.error(message);
+                alert("There is error at sending message. ");
+            }
+        });
+        
+    </script> -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+    
+    
     <script src="js/app.js"></script>
+    
+    
+    
     </body>
+
+
+   
+    
 </html>
