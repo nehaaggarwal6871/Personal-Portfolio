@@ -568,7 +568,7 @@ section.contact .btn-wrapper{
 
     .about .right{
         text-align: center;
-        margin-top: 2rem
+        margin-top: 2rem;
     }
     .about .right .social{
         justify-content: center;
@@ -577,6 +577,7 @@ section.contact .btn-wrapper{
     section{
         padding: 3rem 1rem;
     }
+
    
     section.about .social img {
         width: 80%;
@@ -627,6 +628,12 @@ section.contact .btn-wrapper{
         margin-top: -2rem;
     }
     .hero{
-        padding: 5.8rem 0;
+        padding: 6.3rem 0;
+    }
+    section.about .left{
+        margin-right: 1.4rem;
+    }
+    section.reviews .slider .slide{
+        padding: 0 2rem;
     }
 }
