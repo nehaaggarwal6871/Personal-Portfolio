@@ -291,12 +291,12 @@
                   </div>
                   <form action="javascript:sendmail()" method="post">
                       <div class="input-wrap">
-                          <input id="Name" name="Name"  type="text" placeholder="Your Name *">
-                          <input id="Sender" name="Sender"  type="email" placeholder="Your Email *" >
+                          <input id="Name" name="Name"  type="text" placeholder="Your Name *" required="">
+                          <input id="Sender" name="Sender"  type="email" placeholder="Your Email *" required="" >
                       </div>
                       <div class="input-wrap-2">
-                          <input id="Subject" name="Subject" type="text" placeholder="Your Subject...">
-                          <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                          <input id="Subject" name="Subject" type="text" placeholder="Your Subject..." required="">
+                          <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your Message" required=""></textarea>
                       </div>
                       <div class="btn-wrapper">
                           <button type="submit" class="btn btn-primary">Send Message</button>
@@ -311,45 +311,56 @@
     </div>
     <!-- <script src="js/jquery/jquery.min.js"></script>
     <script src="js/typed.js/typed.min.js"></script> -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script >
-        function sendmail() {
-            var name = $("#Name").val();
-            var email = $("#Sender").val();
-            var subject = $("#Subject").val();
-            var msg = $("#Message").val();
-
-            var Body1 =
-                "Name: " +
-                name +
-                "<br>Email: " +
-                email +
-                "<br>Subject: " +
-                subject +
-                "<br>Message: " +
-                msg;
-                
     
-        }
-        Email.send({
-            Host: "smtp.gmail.com",
-            Username: "officialnehaaggarwal@gmail.com",
-            Password: "neha@3101143@",
-            To: "neha68977@gmail.com",
-            From: "officialnehaaggarwal@gmail.com",
-            Subject: "New Mail on Contact Form from " + name,
-            Body: Body1,
-        }).then((message) => {
-            if(message == 'OK') {
-                alert("Your mail has been send. Thank you for connecting. ");
-            } else {
-                console.error(message);
-                alert("There is error at sending message. ");
-            }
-        });
-        
-    </script> -->
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>  
+
+     function sendmail(){
+    
+			var name = $('#Name').val();
+			var email = $('#Sender').val();
+			var subject = $('#Subject').val();
+      var message = $('#Message').val();
+
+			// var body = $('#body').val();
+
+			var Body='Name: '+name+'<br>Email: '+email+'<br>Subject: '+subject+'<br>Message: '+message;
+			//console.log(name, phone, email, message);
+
+			Email.send({
+                SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'neha68977@gmail.com',
+				From: "officialnehaaggarwal@gmail.com",
+				Subject: "New message on contact from "+name,
+				Body: Body
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')
+						
+					}
+
+				}
+			);
+
+
+
+		}
+
+
+    </script>
+ </script>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -358,10 +369,10 @@
     
     <script src="js/app.js"></script>
     
-    
+   
     
     </body>
-
+    
 
    
     
