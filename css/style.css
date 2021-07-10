@@ -234,7 +234,10 @@ section.projects .card-wrapper .card img{
     top: -3.5rem;
     left: 50%;
     transform: translateX(-50%);
+    height: 35%;
+    width: 35%;
 }
+
 
 section.projects .card-wrapper .card h2{
     font-weight: 400;
@@ -386,7 +389,9 @@ section.contact .card-wrapper .card{
 }
 
 section.contact .card-wrapper .card img{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    width: 30%;
+    height: 30%;
 }
 
 section.contact .card-wrapper .card h1{
