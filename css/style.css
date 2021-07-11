@@ -630,6 +630,14 @@ section.contact .btn-wrapper{
     section.contact .input-wrap{
         grid-template-columns: repeat(1,1fr);
     }
+    section.projects .card-wrapper .card img{
+        position: absolute;
+        top: -3.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 120px;
+        width: 150px;
+    }
 }
 
 @media(max-width:768px){
