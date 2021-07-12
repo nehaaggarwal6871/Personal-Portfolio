@@ -8,9 +8,9 @@ $(document).ready(function () {
 
   new Typed("#typed", {
     strings: [
-      "Full Stack Developer",
-      "UI/UX Designer",
-      " Android App Developer",
+      "a Full Stack Developer",
+      "a Software Developer",
+      "an App Developer",
     ],
     typeSpeed: 100,
     delaySpeed: 1000,
